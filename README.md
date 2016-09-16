@@ -47,8 +47,11 @@
 > Requires more knowledge on current Tango protocol
 >
 > Service discovery (multicast; db)
+>
 > Handshake (exchange client/server infos (name, address, PID etc))
+>
 > Build required connections (events channel; attributes, commands exchange channel)
+>
 > Communicate using low level API see 12
 >
 2. Implement all Tango::DevVarXXXArray type Similar interface - Similar memory management
