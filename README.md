@@ -3,7 +3,7 @@
 ## Documentation
 
 * Compose several few A4 pages guides (how to get started)
-* Improve in-code documentation: examples, guides. See, for instance, (BUG-810)[https://sourceforge.net/p/tango-cs/bugs/810/]
+* Improve in-code documentation: examples, guides. See, for instance, [BUG-810](https://sourceforge.net/p/tango-cs/bugs/810/)
 * Mark topics in the forum as SOLVED when solved
 * Launch something like askTango
 
@@ -31,7 +31,7 @@
 * OS integration: systemd; service (no need in Starter)
 * events with 0-efforts (start polling automatically when there is a subscriber; stop polling when there is no subscribers)
 * three level of API: low level; high level; extended (for backward compatability)
-* redesign API: write_read; write_with_read etc (see (BUG-812)[https://sourceforge.net/p/tango-cs/bugs/812/]; (BUG-809)[https://sourceforge.net/p/tango-cs/bugs/809/] etc)
+* redesign API: write_read; write_with_read etc (see [BUG-812](https://sourceforge.net/p/tango-cs/bugs/812/); [BUG-809](https://sourceforge.net/p/tango-cs/bugs/809/) etc)
 * Use REST based pathes to define resources (host, device, attributes, attr etc)
 * Generate .xmi from .java using pogo from cli
 
