@@ -44,7 +44,7 @@
 # Removing CORBA issues
 
 1. Define a Tango protocol (in ABNF) with at least: request id obj id (uniq in DS, in CS?) method name request type protocol release data
-> Requires more knowledge on current Tango protocol
+> *Requires more knowledge on current Tango protocol. First glance approach:
 >
 > Service discovery (multicast; db)
 >
@@ -67,13 +67,18 @@
 6. Manage TANGO_HOST definition like "orion:10000,orion:11000"
 > Aka Binary star pattern (???)
 7. Implement something like ORBtraceLevel, ORBtraceFile, ORBtraceTime, ORBtraceThreadId Is Tango logging adequate?
-> Use 3rd party well known logging framework (log4cpp ???)
+>
+> Use 3rd party well known logging framework (log4cpp, boost ???)
+>
 8. Select a serialiation lib: No lib Google protbuf capnproto Messagepack
 > Implement in-house
 9. Implement a kind of "is_a" method for all devices in order to manage interface changes with time
 > Remove inheritance from Tango model (must be managed on a developer level)
 10. Define a TOR (Tango Object Reference) stored in DB in order to build object connection How are we going to manage DS on host with several NIC boards?
-> Store IP:PORT; DS listens on all NIC using the same port (by default; can configure opposite);
+> Store IP:PORT; 
+>
+> DS listens on all NIC using the same port (by default; can configure opposite);
+>
 > Implement distributed service (nodb)
 11. Select which kind of container used in DS in which we will store the device object pointer (vector, map,...) Choose the object_id coherent with choice
 > Each DS - independent process (???)
