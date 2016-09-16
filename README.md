@@ -45,6 +45,12 @@
 
 1. Define a Tango protocol (in ABNF) with at least: request id obj id (uniq in DS, in CS?) method name request type protocol release data
 > Requires more knowledge on current Tango protocol
+>
+> Service discovery (multicast; db)
+> Handshake (exchange client/server infos (name, address, PID etc))
+> Build required connections (events channel; attributes, commands exchange channel)
+> Communicate using low level API see 12
+>
 2. Implement all Tango::DevVarXXXArray type Similar interface - Similar memory management
 > Might be true for CPP (but preferably to use stl containers); 
 >
@@ -67,9 +73,12 @@
 > Store IP:PORT; DS listens on all NIC using the same port (by default; can configure opposite);
 > Implement distributed service (nodb)
 11. Select which kind of container used in DS in which we will store the device object pointer (vector, map,...) Choose the object_id coherent with choice
-> Each DS - independent process
+> Each DS - independent process (???)
 12. Try to implement things in a way we could easily replace ZMQ by something else (nextcoolprotocol...)
-> Abstract Tango transport layer must be developed
+> Abstract Tango transport layer must be developed:
+>
+> Low level API: TangoEnvelop (client info; address; size; data types; data)
+>
 13. Can we write it using C++11 features?
 > Must
 14. Is it possible to remove event heartbeat by using XPUB in server (instead of PUB) and monitor socket API in client?
