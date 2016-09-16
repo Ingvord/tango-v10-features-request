@@ -47,6 +47,7 @@
 > Requires more knowledge on current Tango protocol
 2. Implement all Tango::DevVarXXXArray type Similar interface - Similar memory management
 > Might be true for CPP (but preferably to use stl containers); 
+>
 > for Java use native structures (double[]; Map; List etc)
 3. Implement a CORBA::string_dup/string_free/string_alloc methods
 > Use std::string
