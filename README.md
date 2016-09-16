@@ -3,7 +3,7 @@
 ## Documentation
 
 * Compose several few A4 pages guides (how to get started)
-* Improve in-code documentation: examples, guides
+* Improve in-code documentation: examples, guides. See, for instance, (BUG-810)[https://sourceforge.net/p/tango-cs/bugs/810/]
 * Mark topics in the forum as SOLVED when solved
 * Launch something like askTango
 
