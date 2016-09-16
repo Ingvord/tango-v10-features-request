@@ -44,9 +44,10 @@
 # Removing CORBA issues
 
 1. Define a Tango protocol (in ABNF) with at least: request id obj id (uniq in DS, in CS?) method name request type protocol release data
-> Requires more knoledge on current Tango protocol
+> Requires more knowledge on current Tango protocol
 2. Implement all Tango::DevVarXXXArray type Similar interface - Similar memory management
-> Might be true for CPP; or Java use native structures (double[]; Map; List etc)
+> Might be true for CPP (but preferably to use stl containers); 
+> for Java use native structures (double[]; Map; List etc)
 3. Implement a CORBA::string_dup/string_free/string_alloc methods
 > Use std::string
 4. Implement a dummy (?) CORBA::Any object (used in Pogo generated code for commands) in order to provide compatibility
