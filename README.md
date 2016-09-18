@@ -97,7 +97,7 @@
 16. Collocated calls?
 > ???
 17. Device server with user event loop
-> 
+> Nice to have for hardware; but questionable for high level DS 
 18. DS command line option to start DS on a specific port (like ORBendPoint)
 > Must
 19. A scavanger thread to close unused connections (Think of DB server)
