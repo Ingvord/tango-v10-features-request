@@ -18,7 +18,7 @@
     * allow user defined events (push(EventType, Data))
     * use dedicated sockets pair for heartbeat
     * distinguish heartbeat error (connectivity errors) from errors returned from server
-    * restructure Java kernel part (TBD); restructure and clean cpp kernel part
+* restructure Java kernel part (TBD); restructure and clean cpp kernel part
 * redesign threading: easier implementation for multithreaded device servers (State& Status update; send event)  
 
 ### Java
