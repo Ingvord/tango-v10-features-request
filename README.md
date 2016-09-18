@@ -36,6 +36,7 @@
 * redesign API: write_read; write_with_read etc (see [BUG-812](https://sourceforge.net/p/tango-cs/bugs/812/); [BUG-809](https://sourceforge.net/p/tango-cs/bugs/809/) etc)
 * Use REST based pathes to define resources (host, device, attributes, attr etc)
 * Generate .xmi from .java using pogo from cli
+* Exception hierarchy (currently everything is DevFailed)
 
 ## Replace CORBA
 * simplify and standardize Tango protocol (shall be implementation independent)
