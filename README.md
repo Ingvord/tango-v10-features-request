@@ -65,6 +65,8 @@
 > Pogo must follow kernel not vice versa
 5. omnithread library compatibility (C++11 ?) thread class (detached and undetached) oomni_mutex, omni_mutex_lock, omni_condition variable
 > Use c++11 (14?) thread features (async; future etc); 
+>
+>Single acceptor -> N selectors (CPU) -> dynamic worker pool
 6. Manage TANGO_HOST definition like "orion:10000,orion:11000"
 > Aka Binary star pattern (???)
 7. Implement something like ORBtraceLevel, ORBtraceFile, ORBtraceTime, ORBtraceThreadId Is Tango logging adequate?
